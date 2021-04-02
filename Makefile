@@ -3,8 +3,8 @@ CFLAGS=-Wall -Wextra # compiler flags, troque o que quiser, exceto bibliotecas e
 EXEC=./bora # nome do executavel que sera gerado, nao troque
 TMPOUT=bora.testresult
 
-$(EXEC): problems/problem1013.cpp
-	$(CC) $(CFLAGS) problems/problem1013.cpp -o $(EXEC)
+$(EXEC): problems/problem1015.cpp
+	$(CC) $(CFLAGS) problems/problem1015.cpp -o $(EXEC)
 	
 test: $(EXEC)
 	@bash run_tests.sh $(EXEC) $(TMPOUT)
