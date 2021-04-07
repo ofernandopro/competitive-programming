@@ -1,3 +1,7 @@
+# URI Online Judge Problems
+
+Os problemas encontrados neste repositório são retirados do site URI (https://www.urionlinejudge.com.br/judge/pt). Os problemas foram divididos em pastas, uma para os problemas resolvidos em JavaScript e outra para os problemas resolvidos em C++. 
+
 ## Observações Importantes:
 
 1) Ao copiar os códigos em JavaScript para o URI, adicione na primeira linha imediatamente antes de "stdin" o seguinte: "/dev/stdin". Logo, a primeira linha para funcionar no URI fica do seguinte modo:
@@ -8,11 +12,11 @@
 
 - node ./script.js
 
-3) Para rodar algum programa em C++ localmente, mude o Makefile e coloque o arquivo que deseja compilar. Para rodar, faça:
+3) Para rodar algum programa em C++ localmente, mude o Makefile e coloque o arquivo que deseja compilar. Após isso, para rodar, faça:
 - Acesse a pasta challenges-cpp
 - Digite make no terminal
 - Digite ./run no terminal
 
-4) Os problemas foram criados apenas para que eu possa testar e melhorar minha lógica de programação, mas sinta-se à vontade para copiar algum código que deseja.
+4) Os problemas foram criados apenas para testar e melhorar minha lógica de programação, mas sinta-se à vontade para copiar algum código que deseja.
 
 
