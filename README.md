@@ -1,7 +1,19 @@
 # URI Online Judge Problems
 
+## Sobre Mim
+
+Perfil: https://www.urionlinejudge.com.br/judge/pt/profile/367532
+Posição: 18.411º
+Pontos: 272,4805
+Resolvidos: 60
+
+<hr />
+## Sobre Este Repositório
+
 Os problemas encontrados neste repositório são retirados do site URI (https://www.urionlinejudge.com.br/judge/pt). Os problemas foram divididos em pastas, uma para os problemas resolvidos em JavaScript e outra para os problemas resolvidos em C++. 
 
+
+<hr />
 ## Observações Importantes:
 
 1) Ao copiar os códigos em JavaScript para o URI, adicione na primeira linha imediatamente antes de "stdin" o seguinte: "/dev/stdin". Logo, a primeira linha para funcionar no URI fica do seguinte modo:
