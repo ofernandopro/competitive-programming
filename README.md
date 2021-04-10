@@ -1,6 +1,16 @@
 # URI Online Judge Problems
 
+## Sobre Mim
+
+Perfil: https://www.urionlinejudge.com.br/judge/pt/profile/367532
+Posição: 18.411º
+Pontos: 272,4805
+Resolvidos: 60
+
+## Sobre Este Repositório
+
 Os problemas encontrados neste repositório são retirados do site URI (https://www.urionlinejudge.com.br/judge/pt). Os problemas foram divididos em pastas, uma para os problemas resolvidos em JavaScript e outra para os problemas resolvidos em C++. 
+
 
 ## Observações Importantes:
 
