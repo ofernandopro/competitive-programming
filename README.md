@@ -2,10 +2,10 @@
 
 ## Sobre Mim
 
-Perfil: https://www.urionlinejudge.com.br/judge/pt/profile/367532
-Posição: 18.411º
-Pontos: 272,4805
-Resolvidos: 60
+Perfil: https://www.urionlinejudge.com.br/judge/pt/profile/367532<br />
+Posição: 16.428º<br />
+Pontos: 289,6939<br />
+Resolvidos: 63<br />
 
 ## Sobre Este Repositório
 
