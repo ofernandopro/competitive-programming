@@ -1,11 +1,11 @@
 # URI Online Judge Problems
 
-## Sobre Mim
+## Perfil
 
-Perfil: https://www.urionlinejudge.com.br/judge/pt/profile/367532<br />
-Posição: 16.135º<br />
-Pontos: 295,7064<br />
-Resolvidos: 65<br />
+Link: https://www.urionlinejudge.com.br/judge/pt/profile/367532<br />
+Posição: 14.875º<br />
+Pontos: 305,5679<br />
+Resolvidos: 68<br />
 
 ## Sobre Este Repositório
 
