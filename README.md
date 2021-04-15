@@ -3,9 +3,9 @@
 ## Perfil
 
 Link: https://www.urionlinejudge.com.br/judge/pt/profile/367532<br />
-Posição: 13.976º<br />
-Pontos: 316,1429<br />
-Resolvidos: 70<br />
+Posição: 9.841º<br />
+Pontos: 382,3672<br />
+Resolvidos: 84<br />
 
 ## Sobre Este Repositório
 
