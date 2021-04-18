@@ -29,4 +29,5 @@ Os problemas encontrados neste repositório são retirados do site URI (https://
 
 4) Os problemas foram criados apenas para testar e melhorar minha lógica de programação, mas sinta-se à vontade para copiar algum código que deseja.
 
-
+5) Para rodar um código em C++ a partir de um arquivo de entrada (neste caso, o arquivo teste01.txt), rode make e depois:
+./run < teste01.txt > minhasaida.out
