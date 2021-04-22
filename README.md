@@ -31,3 +31,5 @@ Os problemas encontrados neste repositório são retirados do site URI (https://
 
 5) Para rodar um código em C++ a partir de um arquivo de entrada (neste caso, o arquivo teste01.txt), rode make e depois:
 ./run < teste01.txt > minhasaida.out
+
+6) Para simular o fim de um arquivo no terminal, faça control+D

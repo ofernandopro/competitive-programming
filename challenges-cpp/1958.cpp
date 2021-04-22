@@ -5,13 +5,18 @@ using namespace std;
 
 int main() {
 
-  int i, cont = 0;
+  int i = 0, cont = 0;
   double x;
   bool negativo = false, is_float = false;
   char inteira;
 
   cin >> x;
   auto str = to_string(x); 
+
+  while(i < 6) {
+    
+    i++;
+  }
 
   cout << str << " " << str.size() <<  endl;
 /*
