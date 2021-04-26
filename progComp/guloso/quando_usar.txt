@@ -1,0 +1,103 @@
+QUANDO USAR ALGORITMOS GULOSOS:
+
+Os problemas que vamos usar algoritmos gulosos são geralmente os problemas de otimização, 
+por exemplo, se eu tenho uma função e quero achar o máximo ou o mínimo, descobrir o menor 
+inteiro que satisfaça uma propriedade, maximizar um somatório, etc.
+
+Mas o mais importante, é que podemos fazer escolhas sobre quais elementos constituirão a 
+resposta.
+
+O que o algoritmo guloso faz é realizar escolhas localmente ótimas de maneira que essas se
+combinem em uma solução globalmente ótima.
+
+Quando tentamos resolver um problema com guloso, é muito importante fazer várias observações 
+sobre o problema, que mesmo que essa obs não dê uma solução para o problema, ela vai ajudar 
+muito a entender o problema e a criar uma intuição sobre como resolver
+
+Normalmente, esses problemas podem ser resolvidos em tempo O(n) ou O(nlogn). Quando a entrada
+é, por exemplo, 10ˆ5, talvez dê pra resolver com guloso, vamos ver o que se trata o problema.
+
+Problemas de algoritmos gulosos em uma array/vector geralmente temos que usar ordenação ou
+usar algo parecido com Kadane (que é um algoritmo pra achar a sublista de máximo valor em
+uma lista)
+
+--------------- Problema 1:
+
+Queremos representar um número N como a soma de k fatoriais, de forma a minimizar k.
+10 = 1! + 1! + 1! + 1! + 1! + 1! + 1! + 1! + 1! + 1!
+   = 2! + 2! + 2! + 1! + 1! + 1! + 1!
+   = 3! + 1! + 1! + 1! + 1!
+   = 3! + 2! + 2!
+
+Primeira OBS: o valor a! não será usado mais que a vezes
+Segunda OBS: Escolhendo gulosamente, o ótimo local é sempre escolher o maior fatorial
+
+--------------- Problema 2:
+
+Um restaurante recebe N (N <= 10ˆ5) pedidos de reserva. Cada pedido ocupa o restaurante por um
+período contíguo de li até ri, por exemplo, das 9 às 10 horas. Com a restrição de que duas 
+reservas não podem ter interseção, qual o maior número de pedidos que podemos aceitar?
+input:
+5
+1 2
+2 3
+3 4
+4 5
+5 6
+output: 3
+
+(Esse problema se encaixa em uma categoria de problemas gulosos que resolvemos a partir de
+ordenação). 
+Ex: 
+Vetor de números: ordenar de forma crescente, decrescente
+Vetor de palavras: ordenar lexicograficamente
+Vetor de pares: ordenar pela diferença (second - first), ordenar pelo primeiro ou segundo 
+elemento, ordenar por alguma fórmula f(x, y)
+
+Vamos pensar então em como ordenar os intervalos nesse exemplo. (caso eu acha um contraexemplo
+de uma ordenação, ela está errada e devemos tentar outra)
+
+Ordenar pelo começo?
+ ---------
+  -- --- 
+(Falha)
+
+Ordenar pelo tamanho?
+     --
+  ---  -----
+(Falha)
+
+Ordenar pelo número de interseções de cada intervalo? 
+(Falha)
+
+Ordenar pelo final do intervalo? (Dá certo)
+Prova:
+Imagina que alguém afirme que possui uma resposta melhor que a nossa. Nesse caso, assuma que 
+antes de uma certa posição i, ele escolheu os mesmos intervalos da nossa resposta, ou seja, 
+essa é a primeira posição que ele faz uma escolha diferente. Sendo assim, esse intervalo 
+termina depois do nosso. Nesse caso, substituí-lo pela nossa escolha garante o mesmo resultado, 
+pois ainda não estamos criando nenhuma interseção. Logo, nossa resposta é no mínimo tão boa e, 
+assim, não existe solução melhor.
+
+---------------- Problema 3:
+
+Bruninho tem que entrar em um corredor, percorrer algumas salas e depois sair do corredor. 
+Ele pode entrar apenas uma vez, e passar por cada sala apenas uma vez. Ao passar por uma sala, 
+ele ganha um certo número de vidas (que pode ser negativo). O objetivo é passar pelo corredor
+coletando a maior quantidade possível de vidas.
+7
+-2 5 -1 8 -11 7 3
+Output: 12
+
+Observações:
+1) se o vetor for todo positivo, a resposta será a soma de todos os elementos do vetor.
+2) se o vetor for todo de números negativos, a resposta será o maior elemento do vetor
+3) Soma máxima que termina na posição i só depende da soma máxima na posição i-1 e do 
+vetor v[i] (vamos achar a soma que termina em cada posição i do vetor)
+Kadane:
+4) Manteremos uma variável soma_ant que nos diz o valor da maior soma que termina na posição 
+anterior (i-1)
+5) Se soma_ant for maior que 0, a soma máxima de i será v[i] + soma_ant
+6) Se soma_ant for menor que 0, a soma máxima de i será v[i]
+7) Atualizamos soma_ant e vemos se é maior que nossa resposta (a resposta será o maior entre 
+todas as soma_ant)

@@ -1,0 +1,11 @@
+Vereditos:
+
+. Wrong Answer (WA): a resposta não é correta
+. Time Limit Exceeded (TLE): código não conseguiu dar a resposta dentro do tempo previsto 
+pelo problema
+. Memory Limit Exceeded (MLE): código usou mais memória que a permitida pelo 
+problema (geralmente esse número é de 10ˆ7)
+. Runtime Error: Houve algum erro durante a execução do código (muito comum ser causado por 
+acesso de posições indevidas da memória. Ex: acessou a posição -1 do vetor)
+. Presentation Error: saída está formatada de maneira diferente da proposta pelo 
+problema (geralmente espaços ou quebras de linhas indevidas)
