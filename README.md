@@ -1,15 +1,15 @@
 # URI Online Judge Problems
 
-## Perfil
-
-Link: https://www.urionlinejudge.com.br/judge/pt/profile/367532<br />
-Posição: 9.521º<br />
-Pontos: 386,4747<br />
-Resolvidos: 85<br />
-
 ## Sobre Este Repositório
 
-Os problemas encontrados neste repositório são retirados do site URI (https://www.urionlinejudge.com.br/judge/pt). Os problemas foram divididos em pastas, uma para os problemas resolvidos em JavaScript e outra para os problemas resolvidos em C++. 
+Os problemas encontrados neste repositório são retirados dos sites URI (https://www.urionlinejudge.com.br/judge/pt), CodeForces (https://codeforces.com/), HackerRank (https://www.hackerrank.com/dashboard) e SPOJ (https://www.spoj.com/). Os problemas foram divididos em pastas, uma para cada site em que os problemas foram retirados. A maioria dos problemas foram resolvidos na linguagem C++ e alguns em JavaScript.
+
+## Perfil URI
+
+Link: https://www.urionlinejudge.com.br/judge/pt/profile/367532<br />
+Posição: 5196º<br />
+Pontos: 530,7024<br />
+Resolvidos: 108<br /> 
 
 
 ## Observações Importantes:
@@ -23,7 +23,7 @@ Os problemas encontrados neste repositório são retirados do site URI (https://
 - node ./script.js
 
 3) Para rodar algum programa em C++ localmente, mude o Makefile e coloque o arquivo que deseja compilar. Após isso, para rodar, faça:
-- Acesse a pasta challenges-cpp
+- Acesse a pasta em que o arquivo está
 - Digite make no terminal
 - Digite ./run no terminal
 
