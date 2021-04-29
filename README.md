@@ -1,4 +1,4 @@
-# URI Online Judge Problems
+# Logic Problems
 
 ## Sobre Este Repositório
 

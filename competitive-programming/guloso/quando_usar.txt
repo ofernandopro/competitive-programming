@@ -70,7 +70,7 @@ Ordenar pelo tamanho?
 Ordenar pelo número de interseções de cada intervalo? 
 (Falha)
 
-Ordenar pelo final do intervalo? (Dá certo)
+Ordenar pelo final do intervalo? (Sim!)
 Prova:
 Imagina que alguém afirme que possui uma resposta melhor que a nossa. Nesse caso, assuma que 
 antes de uma certa posição i, ele escolheu os mesmos intervalos da nossa resposta, ou seja, 
