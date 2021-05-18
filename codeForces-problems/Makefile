@@ -3,8 +3,8 @@ CFLAGS=-Wall -Wextra # compiler flags, troque o que quiser, exceto bibliotecas e
 EXEC=./run # nome do executavel que sera gerado, nao troque
 TMPOUT=run.testresult
 
-$(EXEC): 1351C.cpp
-	$(CC) $(CFLAGS) 1351C.cpp -o $(EXEC)
+$(EXEC): 1328A.cpp
+	$(CC) $(CFLAGS) 1328A.cpp -o $(EXEC)
 	
 test: $(EXEC)
 	@bash run_tests.sh $(EXEC) $(TMPOUT)
