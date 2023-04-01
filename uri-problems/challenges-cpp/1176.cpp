@@ -1,33 +1,51 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
+#define dbg(x) cout << #x << " = " << x << endl;
+
+int fibonacci(int n) {
+  vector<int> lista;
+  if (n == 0) return 0;
+  else if (n == 1) return 1;
+  if (n == 2) return 1;
+  else {
+    lista.push_back(1);
+    lista.push_back(1);
+
+    for (int i = 2; i < n; i++) {
+      int soma = 0;
+      soma += lista[i-2] + lista[i-1];
+      //dbg(soma);
+      lista.push_back(soma);
+    }
+  }
+  return lista[n-1];
+
+  /* RECURSIVO:
+  if (n == 0) return 0;
+  else if (n == 1) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+  */
+
+}
+
 int main(){
 
-  int n, i, j;
-  cin >> n;
+  vector<int> sequencia;
+  int qntNumbers, number;
+  cin >> qntNumbers;
 
-  int x[n];
+  for (int i = 0; i < qntNumbers; i++) {
 
-  for (i = 0; i < n; i++) {
-    cin >> x[i];
+    cin >> number;
+    sequencia.push_back(fibonacci(number));
+
   }
 
-  for (i = 0; i < n; i++) {
-    if(x[i] == 0) {
-      cout << "Fib(" << x[i] << ") = " << 0 << endl;
-    } else if(x[i] == 1) {
-      cout << "Fib(" << x[i] << ") = " << 1 << endl;
-    } else {
-      int fib[x[i]];
-      fib[0] = 0;
-      fib[1] = 1;
-      for (j = 0; j < x[i]-2; j++) {
-        fib[j+2] = fib[j+1] + fib[j];
-      }
-      cout << "Fib(" << x[i] << ") = " << fib[j+2] << endl;
-    }
-
+  for (int i = 0; i < sequencia.size(); i++) {
+    cout << "Fib(" << i << ") = " << sequencia[i] << endl;
   }
 
   return 0;
